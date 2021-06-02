@@ -44,7 +44,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-  test-site:
+browser-test:
     needs: [deploy-staging]
     runs-on: ubuntu-latest
     name: Test on ${{ matrix.browser }}
