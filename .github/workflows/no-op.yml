@@ -60,7 +60,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
  
-  deploy-production-satellite:
+  deploy-prod-satellite:
     needs: [test-site]
     if: github.ref == 'refs/heads/main'
 
@@ -81,7 +81,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
     
-  deploy-production-terra:
+  deploy-prod-terra:
     needs: [test-site]
     if: github.ref == 'refs/heads/main'
  
