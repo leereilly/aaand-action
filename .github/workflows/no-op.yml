@@ -61,7 +61,7 @@ browser-test:
           echo test, and deploy your project.
  
   deploy-prod-satellite:
-    needs: [test-site]
+    needs: [browser-test]
     if: github.ref == 'refs/heads/main'
 
     runs-on: ubuntu-latest
@@ -82,7 +82,7 @@ browser-test:
           echo test, and deploy your project.
     
   deploy-prod-terra:
-    needs: [test-site]
+    needs: [browser-test]
     if: github.ref == 'refs/heads/main'
  
     runs-on: ubuntu-latest
